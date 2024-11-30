@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt install fontconfig openjdk-17-jre 
+RUN apt install default-jre
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.zip .
