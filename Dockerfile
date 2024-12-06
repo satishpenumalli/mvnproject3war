@@ -1,5 +1,5 @@
-FROM ubuntu
-RUN apt install default-jdk
+FROM ubuntu:22.04
+RUN apt install openjdk-17-jdk
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.zip .
