@@ -1,4 +1,4 @@
-FROM amazonlinux
+FROM amazonlinux:latest
 RUN yum install java -y
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
